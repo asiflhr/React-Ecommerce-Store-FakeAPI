@@ -8,8 +8,8 @@ const Products = () => {
 
   useEffect(() => {
     const getProduct = async () => {
-      setLoading(true);
-      const res = await fetch(`https://fakestoreapi.com/products`);
+      setLoading(true);   
+      const res = await fetch(`https://fakestoreapi.com/products`);   //fetching data from fake api
       setData(await res.json());
       setLoading(false);
     }
@@ -50,35 +50,6 @@ const Products = () => {
   }
 
   return (
-    // <div className="products-container container col-md-6">
-    //   <div className="row">
-    //   {loading && (
-    //     <div>
-    //       {" "}
-    //       <h1>Loading...</h1>
-    //     </div>
-    //   )}
-
-    //   {data.map((product) => (
-    //     <div key={product.id} className="card">
-    //       <div>
-    //         <img src={product.image} className="productImage" alt="#" />
-    //       </div>
-    //       <div className="card-description">
-    //         <h6>{product.title}</h6>
-    //         <h5>Price: ${product.price}</h5>
-    //         <h5>Category: {product.category}</h5>
-    //         <NavLink to={`/products/${product.id}`} className="btn btn-primary ms-2 px-3 py-2 justify-content-center" >
-    //           View Detail
-    //         </NavLink>
-    //       </div>
-    //     </div>
-    //   ))}
-
-      
-    //   </div>
-    // </div>
-
     <div>
       <div className="container my-2 py-2">
         <div className="row">
