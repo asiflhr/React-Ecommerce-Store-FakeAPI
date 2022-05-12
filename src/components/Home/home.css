@@ -44,7 +44,8 @@
     font-weight: bold;
     color: #bb0d4d;
   }
-
+  
+/* 
   @media (min-width: 576px) {
     .i-left{
       margin-top: 1rem;
@@ -76,4 +77,4 @@
     .big-text {
       font-size: 3rem;
     }
-  }
+  } */
