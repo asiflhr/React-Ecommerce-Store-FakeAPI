@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const SingleProduct = () => {
-  const id = useParams();
+  const id = useParams(); //get id from url
   const pId = id.id;
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -11,7 +11,7 @@ const SingleProduct = () => {
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      const res = await fetch(`https://fakestoreapi.com/products/${pId}`);
+      const res = await fetch(`https://fakestoreapi.com/products/${pId}`);  //fetching data from fake api
       setData(await res.json());
       setLoading(false);
     };
@@ -29,13 +29,13 @@ const SingleProduct = () => {
   const DeleteProduct = async () => {
     console.log("deleteProduct");
     await fetch(`https://fakestoreapi.com/products/${pId}`, {
-      method: "DELETE",
+      method: "DELETE",         //  deleting data from fake api
     }).then(res=>res.json())
     .then(json=>console.log(json))
     window.location.href = "/products"; // redirect to products page
   }
 
-  const Product = () => {
+  const Product = () => {       //show product function
     return (
       <>
         <div className="col-md-6">

@@ -23,7 +23,7 @@ const Products = () => {
     )
   }
 
-  const ShowProducts = () => {
+  const ShowProducts = () => {    //show products
     return (
       <>
         {data.map((product) => (

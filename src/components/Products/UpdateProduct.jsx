@@ -16,7 +16,7 @@ const UpdateProduct = () => {
     const getProduct = async () => {
       setLoading(true);
       const res = await fetch(`https://fakestoreapi.com/products/${pId}`);
-      setData(await res.json());
+      setData(await res.json());    //fetching data from fake api to component to edit
       setLoading(false);
     };
     getProduct();
@@ -25,7 +25,7 @@ const UpdateProduct = () => {
 
   const updateProductData = async () => {
     await fetch(`https://fakestoreapi.com/products/${pId}`, {
-      method: "PUT",
+      method: "PUT",        //  updating data from fake api 
       body: JSON.stringify({
         title: name,
         price: price,
