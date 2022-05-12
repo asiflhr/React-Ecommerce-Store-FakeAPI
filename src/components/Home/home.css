@@ -45,3 +45,35 @@
     color: #bb0d4d;
   }
 
+  @media (min-width: 576px) {
+    .i-left{
+      margin-top: 1rem;
+      padding-left: 0px;
+      width: 30%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .i-right{
+      margin-top: 1rem;
+      float: right;
+      height: 100%;
+      width: 75%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .container{
+      margin-left: 10px;
+      margin-right: 0px;
+    }
+  }
+
+
+  @media (min-width: 576px) {
+    .big-text {
+      font-size: 3rem;
+    }
+  }

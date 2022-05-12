@@ -23,9 +23,9 @@ const Home = () => {
         </div>
 
         {/* ridht side */}
-        <div className="col-sm-6">
+        <div className="col-sm-6 i-right">
           <div className="image-responsive right-side-content">
-            <img src={HomeImage} alt="" className="mb-xl-0 " />
+            <img src={HomeImage} alt="" className="mb-xl-0 homeImage" />
           </div>
         </div>
       </div>
