@@ -1,0 +1,47 @@
+.homepage {
+    height: 100%;
+    background-color: #DDDBCB;
+  }
+  
+  /* left side styling */
+  .i-left {
+    gap: 2rem;
+    margin-top: 6rem;
+  }
+
+  .homeBtn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border: none;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    background: #bb0d4d;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .homeBtn:hover {
+    background: #1B9AAA;
+    text-decoration: none;
+    transform: scale(1.1);
+  }
+  
+
+  /* right side styling */
+
+  .right-side-content img {
+    max-width: 60%;
+    height: 60% ;
+    float: right;
+    margin-top: 0%;
+  }
+
+  .big-text {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #bb0d4d;
+  }
+

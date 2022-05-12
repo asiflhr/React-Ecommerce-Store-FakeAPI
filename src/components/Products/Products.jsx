@@ -1,0 +1,94 @@
+import React, { useState, useEffect } from "react";
+import "../../App.css";
+import { NavLink } from "react-router-dom";
+
+const Products = () => {
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const getProduct = async () => {
+      setLoading(true);
+      const res = await fetch(`https://fakestoreapi.com/products`);
+      setData(await res.json());
+      setLoading(false);
+    }
+    getProduct();
+
+  }, []);
+
+  const Loading = () => {
+    return(
+      <h3>Loading...</h3>
+    )
+  }
+
+  const ShowProducts = () => {
+    return (
+      <>
+        {data.map((product) => (
+          <div className="col-md-3 mb-4">
+            <div className="card h-100 text-center p-4 pb-0" key={product.id}>
+              <img
+                src={product.image}
+                alt={product.title}
+                height="200px"
+                className="card-img-top"
+              />
+              <div className="card-body mb-0 pb-0">
+                <h5 className="card-title mb-0">{product.title.substring(0,12)}...</h5>
+                <h3 className="card-price lead fw-bold">Price: ${product.price}</h3>
+                <NavLink to={`/products/${product.id}`} className="btn btn-outline-dark mb-0">
+                  Buy Now
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        ))}
+      </>
+    );
+  }
+
+  return (
+    // <div className="products-container container col-md-6">
+    //   <div className="row">
+    //   {loading && (
+    //     <div>
+    //       {" "}
+    //       <h1>Loading...</h1>
+    //     </div>
+    //   )}
+
+    //   {data.map((product) => (
+    //     <div key={product.id} className="card">
+    //       <div>
+    //         <img src={product.image} className="productImage" alt="#" />
+    //       </div>
+    //       <div className="card-description">
+    //         <h6>{product.title}</h6>
+    //         <h5>Price: ${product.price}</h5>
+    //         <h5>Category: {product.category}</h5>
+    //         <NavLink to={`/products/${product.id}`} className="btn btn-primary ms-2 px-3 py-2 justify-content-center" >
+    //           View Detail
+    //         </NavLink>
+    //       </div>
+    //     </div>
+    //   ))}
+
+      
+    //   </div>
+    // </div>
+
+    <div>
+      <div className="container my-2 py-2">
+        <div className="row">
+          <div className="row justify-content-center">
+            {loading ? <Loading/> : <ShowProducts />}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Products;
