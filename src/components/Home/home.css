@@ -59,13 +59,13 @@
       margin-top: 1rem;
       float: right;
       height: 100%;
-      width: 75%;
-      margin-bottom: 1rem;
+      width: 70%;
+      margin-bottom: 0rem;
     }
   }
 
   @media (min-width: 576px) {
-    .container{
+    .container {
       margin-left: 10px;
       margin-right: 0px;
     }
