@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from "../../components/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -12,7 +11,6 @@ export default function Contact() {
         nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione
         hic aspernatur error blanditiis?
       </p>
-      <Footer />
     </section>
   );
 }

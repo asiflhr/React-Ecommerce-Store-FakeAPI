@@ -11,6 +11,8 @@
   color: white;
   font-weight: bold;
   filter: drop-shadow(0 2px 5px rgb(206, 204, 204));
+  padding: 0px 0px;
+  height: 12vh;
 }
 
 .navlink{

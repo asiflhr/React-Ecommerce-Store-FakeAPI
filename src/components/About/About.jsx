@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/Footer/Footer";
 
 export default function About() {
   return (
@@ -20,7 +19,6 @@ export default function About() {
         <h4>Thanks For Visiting Our Site</h4>
         <h3>Have a nice day!</h3>
       </div>
-      <Footer />
     </section>
   );
 }

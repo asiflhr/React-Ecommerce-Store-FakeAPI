@@ -1,10 +1,11 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import "./footer.css";
 
 const Footer = () => {
   return (
     <>
-      <Navbar bg="dark" expand="lg" fixed="bottom">
+      <Navbar bg="dark" expand="lg" fixed="bottom" className="footer">
         <Container>
           <Nav>
             <div className="text-center mt-2">
