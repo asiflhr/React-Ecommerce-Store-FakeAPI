@@ -6,7 +6,7 @@
   
   /* left side styling */
   .i-left {
-    margin-top: 6rem;
+    padding-top: 6rem;
   }
 
   .homeBtn {
@@ -32,11 +32,11 @@
 
   /* right side styling */
 
-  .right-side-content img {
-    max-width: 60%;
-    height: 60% ;
+  .homeImage {
+    max-width: 100%;
+    height: 100%;
     float: right;
-    margin-top: 0%;
+    padding-right: 10%;
   }
 
   .big-text {
@@ -48,42 +48,71 @@
  
   @media screen and (min-width: 650px) {
     .i-left{
-      margin-top: 1rem;
-      padding-left: 0px;
+      padding: 2em 1em 0em 1em;
       width: 50vw;
       height: 80vh;
       margin-bottom: 1rem;
       background-color: #c7859d;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    .big-text {
+      font-size: 2rem;
     }
 
     .i-right{
       padding-left: 0px;
-      width: 49vw;
+      width: 50vw;
       height: 80vh;
       background-color: #c9f08c;
     }
   }
-/*
-  @media (min-width: 576px) {
-    .i-right{
-      margin-top: 1rem;
-      float: right;
-      height: 100%;
-      width: 70%;
-      margin-bottom: 0rem;
+
+  @media screen and (min-width: 950px) {
+    .i-left{
+      padding: 5em 1em 0em 1em;
+      padding-bottom: 1rem;
     }
-  }
 
-  @media (min-width: 576px) {
-    .container {
-      margin-left: 10px;
-      margin-right: 0px;
-    }
-  }
-
-
-  @media (min-width: 576px) {
     .big-text {
-      font-size: 3rem;
+      font-size: 4rem;
     }
-  } */
+  }
+
+  @media screen and (min-width: 1150px) {
+    .i-left{
+      padding: 4em 1em 0em 1em;
+      padding-bottom: 1rem;
+      
+    }
+
+    .big-text {
+      font-size: 5rem;
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    .i-left{
+      padding: 2em 1em 0em 1em;
+      width: 50vw;
+      height: 80vh;
+      margin-bottom: 1rem;
+      background-color: #c7859d;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    .big-text {
+      font-size: 2rem;
+    }
+
+    .i-right{
+      padding-left: 0px;
+      width: 50vw;
+      height: 80vh;
+      background-color: #c9f08c;
+    }
+  }

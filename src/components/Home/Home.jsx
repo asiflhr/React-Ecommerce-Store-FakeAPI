@@ -6,7 +6,7 @@ import HomeImage from "../../static/img/home.png";
 const Home = () => {
   return (
     <div className="homepage">
-      <div className="col-sm-6 i-left"> {/* left side */}
+      <div className="i-left"> {/* left side */}
         <h4>20% DISCOUNT ON</h4>
         <h1 className="big-text">Girl's Fashion</h1>
         <p className="newsDetail">
@@ -17,10 +17,8 @@ const Home = () => {
           <button className="homeBtn">Shop Now</button>
         </Link>
       </div>
-      <div className="col-sm-6 i-right"> {/* ridht side */}
-        <div className="">
-          <img src={HomeImage} alt="" className="mb-xl-0 homeImage" />
-        </div>
+      <div className="i-right"> {/* ridht side */}
+        <img src={HomeImage} alt="" className="homeImage" />
       </div>
     </div>
   );
