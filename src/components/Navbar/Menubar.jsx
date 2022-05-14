@@ -1,12 +1,12 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import Logo from '../static/img/logo.png'
+import Logo from '../../static/img/logo.png'
 
 
 const Menubar = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg" className='navbar'>
+      <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="/">
             <img src={Logo} alt='logo' className='navbar-brand'/>

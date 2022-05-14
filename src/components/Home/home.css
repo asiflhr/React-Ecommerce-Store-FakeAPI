@@ -1,11 +1,11 @@
 .homepage {
     height: 80vh;
-    background-color: #DDDBCB;
+    background-color: #f0efeb;
+    display: flex;
   }
   
   /* left side styling */
   .i-left {
-    gap: 2rem;
     margin-top: 6rem;
   }
 
@@ -45,16 +45,25 @@
     color: #bb0d4d;
   }
   
-/* 
-  @media (min-width: 576px) {
+ 
+  @media screen and (min-width: 650px) {
     .i-left{
       margin-top: 1rem;
       padding-left: 0px;
-      width: 30%;
+      width: 50vw;
+      height: 80vh;
       margin-bottom: 1rem;
+      background-color: #c7859d;
+    }
+
+    .i-right{
+      padding-left: 0px;
+      width: 49vw;
+      height: 80vh;
+      background-color: #c9f08c;
     }
   }
-
+/*
   @media (min-width: 576px) {
     .i-right{
       margin-top: 1rem;

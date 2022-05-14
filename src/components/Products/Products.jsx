@@ -51,7 +51,7 @@ const Products = () => {
 
   return (
     <div>
-      <div className="container my-2 py-2">
+      <div className="container">
         <div className="row">
           <div className="row justify-content-center">
             {loading ? <Loading/> : <ShowProducts />}
