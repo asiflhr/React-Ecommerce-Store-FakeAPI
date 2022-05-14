@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "././products.css";
 import "../../App.css";
 import { NavLink } from "react-router-dom";
 
